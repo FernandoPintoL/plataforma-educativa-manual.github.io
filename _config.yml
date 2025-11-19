@@ -1,0 +1,66 @@
+# GitHub Pages Configuration for Plataforma Educativa Documentation
+
+# Site settings
+title: Plataforma Educativa Inteligente
+tagline: Manual de Usuario y Documentación Completa
+description: >
+  Documentación completa de la Plataforma Educativa Inteligente con manuales
+  específicos para estudiantes, profesores, directores y padres.
+
+url: "https://tu-usuario.github.io/PLATAFORMA-EDUCATIVA"
+baseurl: "/PLATAFORMA-EDUCATIVA"
+
+# Repository settings
+repository: tu-usuario/PLATAFORMA-EDUCATIVA
+
+# Theme
+theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+# Exclude files
+exclude:
+  - .gitignore
+  - composer.json
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github
+  - docker-compose.yml
+  - Dockerfile
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name
+
+# Default settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "docs"
+      type: "docs"
+    values:
+      layout: "doc"
+
+# SEO
+google_analytics: G-XXXXXX  # Reemplazar con tu ID de Google Analytics
