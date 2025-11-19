@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual del Padre - Plataforma Educativa Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manual-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">📚</span>
+                <span class="brand-text">Plataforma Educativa Inteligente</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="manual-estudiante.html" class="nav-link">Estudiante</a></li>
+                <li><a href="manual-profesor.html" class="nav-link">Profesor</a></li>
+                <li><a href="manual-director.html" class="nav-link">Director</a></li>
+                <li><a href="manual-padre.html" class="nav-link active">Padre</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="manual-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        <div class="manual-header-content">
+            <span class="header-icon">👨‍👩‍👧</span>
+            <h1>Manual del Padre o Apoderado</h1>
+            <p>Cómo monitorear el desarrollo académico de tu hijo</p>
+        </div>
+    </header>
+
+    <div class="toc-container">
+        <h3>📋 Tabla de Contenidos</h3>
+        <nav class="toc">
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#acceso">Acceso a la Plataforma</a></li>
+                <li><a href="#dashboard">Dashboard Parental</a></li>
+                <li><a href="#calificaciones">Ver Calificaciones</a></li>
+                <li><a href="#desempenio">Entender el Desempeño</a></li>
+                <li><a href="#riesgo">Análisis de Riesgo</a></li>
+                <li><a href="#comunicacion">Comunicación con Profesores</a></li>
+                <li><a href="#tips">Tips de Apoyo Académico</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="manual-container">
+        <section id="introduccion" class="manual-section">
+            <h2>👋 Introducción</h2>
+            <p>Bienvenido al portal parental de la Plataforma Educativa Inteligente.</p>
+            <p>Esta herramienta te permite estar involucrado en el aprendizaje de tu hijo(a):</p>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Monitorea el Progreso</h4>
+                        <p>Ve en tiempo real las calificaciones y tareas de tu hijo</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Entiende su Desempeño</h4>
+                        <p>Recibe análisis automáticos sobre su situación académica</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Comunícate con Profesores</h4>
+                        <p>Interactúa directamente con los docentes de tu hijo</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Recibe Alertas</h4>
+                        <p>Notificaciones sobre cambios importantes en su rendimiento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acceso" class="manual-section">
+            <h2>🔐 Acceso a la Plataforma</h2>
+
+            <div class="subsection">
+                <h3>Crear tu cuenta</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Ve a la página de inicio</h4>
+                            <p>Escribe la URL de la plataforma</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Haz clic en "Soy Padre/Apoderado"</h4>
+                            <p>En la página de registro</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Completa tus datos</h4>
+                            <p>Nombre, email, teléfono y contraseña</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Vincula a tu hijo(a)</h4>
+                            <p>Ingresa el nombre y código de tu hijo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>¿Olvidaste tu contraseña?</h3>
+                <ul>
+                    <li>Haz clic en "¿Olvidaste tu contraseña?"</li>
+                    <li>Ingresa tu email</li>
+                    <li>Revisa tu correo (puede estar en spam)</li>
+                    <li>Haz clic en el enlace para restablecer</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>🔒 Seguridad</h3>
+                <ul>
+                    <li>Nunca compartas tu contraseña</li>
+                    <li>Solo tú podrás ver la información de tu hijo</li>
+                    <li>Los datos están protegidos con encriptación</li>
+                    <li>Cierra sesión en computadoras compartidas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="dashboard" class="manual-section">
+            <h2>📊 Dashboard Parental</h2>
+            <p>Al ingresar, verás el resumen académico de tu hijo(a):</p>
+            <ul>
+                <li><strong>Estado General:</strong> Indicador visual de su desempeño</li>
+                <li><strong>Calificaciones Recientes:</strong> Notas obtenidas recientemente</li>
+                <li><strong>Tareas Próximas:</strong> Lo que debe entregar esta semana</li>
+                <li><strong>Análisis de Riesgo:</strong> Si está en riesgo académico</li>
+                <li><strong>Asistencia:</strong> Porcentaje de asistencia a clases</li>
+            </ul>
+        </section>
+
+        <section id="calificaciones" class="manual-section">
+            <h2>⭐ Ver Calificaciones</h2>
+
+            <div class="subsection">
+                <h3>Acceder al historial de calificaciones</h3>
+                <p>Para ver todas las notas de tu hijo:</p>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Haz clic en "Calificaciones"</h4>
+                            <p>En el menú principal</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Selecciona el curso</h4>
+                            <p>Ve notas por materia</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Analiza el desglose</h4>
+                            <p>Ve qué tareas, exámenes y participación hacen su nota</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Lee el feedback</h4>
+                            <p>Muchas notas incluyen comentarios del profesor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Cómo se calcula la nota final</h3>
+                <div class="grade-scale">
+                    <div class="grade-item">
+                        <span class="grade-number">Tareas</span>
+                        <span class="grade-label">40% de la nota</span>
+                    </div>
+                    <div class="grade-item">
+                        <span class="grade-number">Exámenes</span>
+                        <span class="grade-label">40% de la nota</span>
+                    </div>
+                    <div class="grade-item">
+                        <span class="grade-number">Participación</span>
+                        <span class="grade-label">20% de la nota</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Configurar alertas</h3>
+                <p>Puedes recibir notificaciones cuando:</p>
+                <ul>
+                    <li>Se publica una nueva calificación</li>
+                    <li>La nota baja significativamente</li>
+                    <li>Tu hijo entra en riesgo académico</li>
+                    <li>Hay un anuncio importante del profesor</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="desempenio" class="manual-section">
+            <h2>📈 Entender el Desempeño</h2>
+
+            <div class="subsection">
+                <h3>Escala de calificaciones</h3>
+                <div class="info-box">
+                    <ul>
+                        <li><strong>9.0 - 10.0 (Excelente 🌟):</strong> Desempeño excepcional</li>
+                        <li><strong>8.0 - 8.9 (Bueno 👍):</strong> Muy buen desempeño</li>
+                        <li><strong>7.0 - 7.9 (Satisfactorio ✓):</strong> Cumple con los objetivos</li>
+                        <li><strong>6.0 - 6.9 (Aprobado ➕):</strong> Cumple mínimo requerido</li>
+                        <li><strong>&lt; 6.0 (No Aprobado ❌):</strong> No cumple los objetivos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Analizar tendencias</h3>
+                <p>Observa cómo va evolucionando el desempeño de tu hijo:</p>
+                <ul>
+                    <li>¿Las notas están mejorando o empeorando?</li>
+                    <li>¿Hay cursos donde le va mejor que en otros?</li>
+                    <li>¿Las notas de tareas son mejores que las de exámenes?</li>
+                    <li>¿Ha habido cambios recientes?</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 Cuando las Notas Bajan</h3>
+                <ul>
+                    <li>No entres en pánico, es normal en ciertos períodos</li>
+                    <li>Habla con tu hijo sobre qué pasó</li>
+                    <li>Pregunta al profesor si necesita apoyo</li>
+                    <li>Considera contratar tutorías si es necesario</li>
+                    <li>Monitorea la próxima evaluación</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="riesgo" class="manual-section">
+            <h2>⚠️ Análisis de Riesgo</h2>
+
+            <div class="subsection">
+                <h3>¿Qué significa estar en riesgo?</h3>
+                <p>La plataforma utiliza inteligencia artificial para detectar estudiantes que podrían estar teniendo dificultades académicas.</p>
+                <p>Si tu hijo está marcado como "en riesgo", significa:</p>
+                <ul>
+                    <li>Está teniendo dificultades en una o más áreas</li>
+                    <li>Hay tiempo para mejorar la situación</li>
+                    <li>Necesita apoyo adicional</li>
+                    <li>Es importante actuar ahora</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Niveles de riesgo</h3>
+                <ul>
+                    <li><strong>🟢 BAJO:</strong> Tu hijo está bien, sin preocupaciones</li>
+                    <li><strong>🟡 MEDIO:</strong> Necesita algo de apoyo adicional</li>
+                    <li><strong>🔴 ALTO:</strong> Requiere intervención inmediata</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Si tu hijo está en riesgo</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Revisa el análisis detallado</h4>
+                            <p>La plataforma explica por qué está en riesgo</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Habla con tu hijo</h4>
+                            <p>Entiende qué está pasando y cómo se siente</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Contacta al profesor</h4>
+                            <p>Pregunta qué puedes hacer para apoyar</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Monitorea el progreso</h4>
+                            <p>Revisa frecuentemente si está mejorando</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comunicacion" class="manual-section">
+            <h2>💬 Comunicación con Profesores</h2>
+
+            <div class="subsection">
+                <h3>Enviar un mensaje a un profesor</h3>
+                <ul>
+                    <li>Haz clic en el curso</li>
+                    <li>Selecciona el profesor</li>
+                    <li>Haz clic en "Enviar Mensaje"</li>
+                    <li>Escribe tu pregunta o comentario</li>
+                    <li>Haz clic en enviar</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Tips para una comunicación efectiva</h3>
+                <ul>
+                    <li><strong>Sé respetuoso:</strong> Mantén un tono profesional y amable</li>
+                    <li><strong>Sé específico:</strong> Di exactamente cuál es tu pregunta</li>
+                    <li><strong>Sé conciso:</strong> No hagas mensajes muy largos</li>
+                    <li><strong>Sé puntual:</strong> Espera entre 24-48 horas para respuesta</li>
+                    <li><strong>Sé constructivo:</strong> Ofrece soluciones, no solo problemas</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Horarios de disponibilidad</h3>
+                <p>Los profesores responden generalmente en horario de trabajo:</p>
+                <ul>
+                    <li>Lunes a viernes: 8:00 AM - 5:00 PM</li>
+                    <li>Responden en las próximas 24-48 horas</li>
+                    <li>Para emergencias, llama a la escuela directamente</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tips" class="manual-section">
+            <h2>📚 Tips de Apoyo Académico</h2>
+
+            <div class="subsection">
+                <h3>Cómo apoyar a tu hijo en casa</h3>
+                <ul>
+                    <li><strong>Crea un espacio de estudio:</strong> Tranquilo, bien iluminado y sin distracciones</li>
+                    <li><strong>Establece rutinas:</strong> Hora fija para estudiar cada día</li>
+                    <li><strong>Supervisa sin controlar:</strong> Pregunta qué aprendió hoy sin ser invasivo</li>
+                    <li><strong>Celebra logros:</strong> Reconoce cuando obtiene una buena calificación</li>
+                    <li><strong>Mantén la comunicación:</strong> Habla regularmente sobre la escuela</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Signos de alerta a considerar</h3>
+                <ul>
+                    <li>Evita hablar sobre la escuela</li>
+                    <li>No quiere ir a clases</li>
+                    <li>Está más estresado o ansiosos</li>
+                    <li>Sus notas bajan repentinamente</li>
+                    <li>Dice que es "demasiado difícil"</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>🎯 Metas Realistas</h3>
+                <ul>
+                    <li>No esperes perfección</li>
+                    <li>Establece metas incrementales</li>
+                    <li>Enfócate en el esfuerzo, no solo en el resultado</li>
+                    <li>Ayuda a tu hijo a aprender de los errores</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="troubleshooting" class="manual-section">
+            <h2>🔧 Troubleshooting</h2>
+
+            <div class="faq-item">
+                <h3>❓ No puedo ver las calificaciones de mi hijo</h3>
+                <ul>
+                    <li>Verifica que está vinculado correctamente</li>
+                    <li>Espera a que se publiquen las calificaciones</li>
+                    <li>Intenta actualizar la página</li>
+                    <li>Contacta a la escuela si sigue el problema</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Mi hijo aparece en riesgo pero sus notas parecen bien</h3>
+                <ul>
+                    <li>El análisis considera múltiples factores</li>
+                    <li>Puede incluir asistencia o participación</li>
+                    <li>Habla con el profesor para entender mejor</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ El profesor no responde mis mensajes</h3>
+                <ul>
+                    <li>Espera 48 horas hábiles antes de insistir</li>
+                    <li>Intenta nuevamente el próximo día</li>
+                    <li>Llama a la escuela si es urgente</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Tengo dificultades para entrar a la plataforma</h3>
+                <ul>
+                    <li>Verifica que escribiste correctamente tu usuario y contraseña</li>
+                    <li>Intenta con otro navegador</li>
+                    <li>Limpia el caché de tu navegador</li>
+                    <li>Usa la opción "Recuperar contraseña"</li>
+                </ul>
+            </div>
+
+            <div class="info-box error">
+                <h3>🆘 ¿Necesitas más ayuda?</h3>
+                <p><strong>Contacta a la escuela:</strong></p>
+                <ul>
+                    <li>Email: soporte@plataformaeducativa.cl</li>
+                    <li>Teléfono: +56 2 2345 6789</li>
+                    <li>O visita la escuela en persona</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="manual-nav">
+        <a href="manual-director.html" class="btn btn-secondary">← Manual Director</a>
+        <a href="faq.html" class="btn btn-primary">Preguntas Frecuentes →</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Plataforma Educativa Inteligente</h4>
+                <p>Documentación oficial 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Manuales</h4>
+                <ul>
+                    <li><a href="manual-estudiante.html">Estudiante</a></li>
+                    <li><a href="manual-profesor.html">Profesor</a></li>
+                    <li><a href="manual-director.html">Director</a></li>
+                    <li><a href="manual-padre.html">Padre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Plataforma Educativa Inteligente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

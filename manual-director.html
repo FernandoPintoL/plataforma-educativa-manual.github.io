@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual del Director - Plataforma Educativa Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manual-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">📚</span>
+                <span class="brand-text">Plataforma Educativa Inteligente</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="manual-estudiante.html" class="nav-link">Estudiante</a></li>
+                <li><a href="manual-profesor.html" class="nav-link">Profesor</a></li>
+                <li><a href="manual-director.html" class="nav-link active">Director</a></li>
+                <li><a href="manual-padre.html" class="nav-link">Padre</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="manual-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+        <div class="manual-header-content">
+            <span class="header-icon">👔</span>
+            <h1>Manual del Director</h1>
+            <p>Supervisión integral de tu institución educativa</p>
+        </div>
+    </header>
+
+    <div class="toc-container">
+        <h3>📋 Tabla de Contenidos</h3>
+        <nav class="toc">
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#dashboard">Dashboard Directivo</a></li>
+                <li><a href="#usuarios">Gestión de Usuarios</a></li>
+                <li><a href="#monitoreo">Monitoreo Institucional</a></li>
+                <li><a href="#analisis">Análisis de Datos</a></li>
+                <li><a href="#reportes">Generación de Reportes</a></li>
+                <li><a href="#configuracion">Configuración</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="manual-container">
+        <section id="introduccion" class="manual-section">
+            <h2>👋 Introducción</h2>
+            <p>Bienvenido al panel de Director de la Plataforma Educativa Inteligente.</p>
+            <p>Esta herramienta te proporciona una visión completa de tu institución:</p>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Supervisión Integral</h4>
+                        <p>Monitorea desempeño de estudiantes, profesores y cursos</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Gestión de Usuarios</h4>
+                        <p>Crea, edita y administra cuentas de profesores y estudiantes</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Análisis Inteligente</h4>
+                        <p>Identifica patrones y tendencias con IA</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Reportes Ejecutivos</h4>
+                        <p>Genera reportes detallados para toma de decisiones</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="manual-section">
+            <h2>📊 Dashboard Directivo</h2>
+            <p>Tu panel principal incluye:</p>
+            <ul>
+                <li><strong>KPIs Institucionales:</strong> Métricas clave de desempeño</li>
+                <li><strong>Estudiantes en Riesgo:</strong> Identificación de casos críticos</li>
+                <li><strong>Desempeño por Curso:</strong> Comparativa de calificaciones</li>
+                <li><strong>Asistencia General:</strong> Estadísticas de asistencia</li>
+                <li><strong>Actividad de Profesores:</strong> Monitoreo de uso de plataforma</li>
+                <li><strong>Alertas Importantes:</strong> Notificaciones críticas</li>
+            </ul>
+        </section>
+
+        <section id="usuarios" class="manual-section">
+            <h2>👥 Gestión de Usuarios</h2>
+
+            <div class="subsection">
+                <h3>Crear nuevos usuarios</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Ve a Gestión de Usuarios</h4>
+                            <p>En el menú principal, selecciona esta opción</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Haz clic en "Agregar Usuario"</h4>
+                            <p>O importa un archivo CSV</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Completa los datos</h4>
+                            <p>Nombre, email, rol y datos de contacto</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Asigna rol y permisos</h4>
+                            <p>Define qué puede hacer el usuario</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Roles disponibles</h3>
+                <ul>
+                    <li><strong>Director:</strong> Acceso total a la plataforma</li>
+                    <li><strong>Profesor:</strong> Gestión de cursos y estudiantes</li>
+                    <li><strong>Estudiante:</strong> Acceso a sus cursos</li>
+                    <li><strong>Padre/Apoderado:</strong> Monitoreo de hijo</li>
+                    <li><strong>Administrador Técnico:</strong> Gestión de sistemas</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Importar usuarios masivamente</h3>
+                <p>Puedes cargar múltiples usuarios desde un archivo CSV:</p>
+                <ul>
+                    <li>Descarga la plantilla</li>
+                    <li>Completa con datos de tu institución</li>
+                    <li>Sube el archivo</li>
+                    <li>Revisa y confirma los datos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="monitoreo" class="manual-section">
+            <h2>📈 Monitoreo Institucional</h2>
+
+            <div class="subsection">
+                <h3>Ver riesgo académico global</h3>
+                <p>Obtén una visión general de qué porcentaje de estudiantes está en riesgo:</p>
+                <ul>
+                    <li>Riesgo bajo: estudiantes con buen desempeño</li>
+                    <li>Riesgo medio: requieren seguimiento</li>
+                    <li>Riesgo alto: necesitan intervención inmediata</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Analizar por curso</h3>
+                <p>Compara desempeño entre cursos para:</p>
+                <ul>
+                    <li>Identificar cursos con bajo rendimiento</li>
+                    <li>Detectar profesores que necesitan apoyo</li>
+                    <li>Evaluar efectividad de metodologías</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Monitoreo de actividad</h3>
+                <p>Ve cómo se está usando la plataforma:</p>
+                <ul>
+                    <li>Profesores activos vs inactivos</li>
+                    <li>Estudiantes con poco acceso</li>
+                    <li>Tendencias de uso</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="analisis" class="manual-section">
+            <h2>🔍 Análisis de Datos</h2>
+
+            <div class="subsection">
+                <h3>Estadísticas por cohorte</h3>
+                <p>Analiza desempeño por grado, nivel o grupo:</p>
+                <ul>
+                    <li>Promedio de calificaciones</li>
+                    <li>Variación de notas</li>
+                    <li>Porcentaje de aprobación</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Identificar tendencias</h3>
+                <p>La IA te muestra patrones importantes:</p>
+                <ul>
+                    <li>Áreas de estudio con dificultad</li>
+                    <li>Periodos críticos del semestre</li>
+                    <li>Grupos de riesgo específicos</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>📊 Visualizaciones Disponibles</h3>
+                <ul>
+                    <li>Gráficos de distribución de calificaciones</li>
+                    <li>Mapas de calor de riesgo por curso</li>
+                    <li>Tendencias de desempeño en el tiempo</li>
+                    <li>Comparativas entre períodos académicos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="reportes" class="manual-section">
+            <h2>📑 Generación de Reportes</h2>
+
+            <div class="subsection">
+                <h3>Tipos de reportes</h3>
+                <ul>
+                    <li><strong>Desempeño Académico:</strong> Calificaciones por curso</li>
+                    <li><strong>Riesgo Institucional:</strong> Estudiantes en riesgo</li>
+                    <li><strong>Asistencia:</strong> Análisis de asistencia global</li>
+                    <li><strong>Actividad de Plataforma:</strong> Uso por usuarios</li>
+                    <li><strong>Intervenciones:</strong> Acciones tomadas</li>
+                    <li><strong>Personalizado:</strong> Tu propio reporte</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Generar un reporte</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Ve a Reportes</h4>
+                            <p>En el menú principal</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Selecciona tipo de reporte</h4>
+                            <p>Elige qué quieres analizar</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Personaliza parámetros</h4>
+                            <p>Fechas, cursos, grupos, etc.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Descarga o comparte</h4>
+                            <p>En PDF, Excel o envía por email</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="configuracion" class="manual-section">
+            <h2>⚙️ Configuración</h2>
+
+            <div class="subsection">
+                <h3>Configuración institucional</h3>
+                <p>En esta sección puedes:</p>
+                <ul>
+                    <li>Cambiar nombre de la institución</li>
+                    <li>Actualizar logo y colores</li>
+                    <li>Configurar períodos académicos</li>
+                    <li>Establecer políticas de calificación</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Configuración de seguridad</h3>
+                <ul>
+                    <li>Cambiar contraseña</li>
+                    <li>Habilitar autenticación de dos factores</li>
+                    <li>Ver historial de acceso</li>
+                    <li>Administrar tokens de API</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Integraciones</h3>
+                <p>Conecta con otros sistemas:</p>
+                <ul>
+                    <li>Sistema de información estudiantil (SIS)</li>
+                    <li>Email institucional</li>
+                    <li>Calendarios académicos</li>
+                    <li>API personalizado</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="troubleshooting" class="manual-section">
+            <h2>🔧 Troubleshooting</h2>
+
+            <div class="faq-item">
+                <h3>❓ No puedo ver todos los estudiantes</h3>
+                <ul>
+                    <li>Verifica que están inscritos en cursos</li>
+                    <li>Comprueba los filtros activos</li>
+                    <li>Revisa que la fecha no esté fuera de rango</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Los reportes se cargan lentamente</h3>
+                <ul>
+                    <li>Reduce el rango de fechas</li>
+                    <li>Filtra por cursos específicos</li>
+                    <li>Intenta en horario de menos uso</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Un profesor no aparece en el sistema</h3>
+                <ul>
+                    <li>Verifica que lo creaste correctamente</li>
+                    <li>Comprueba que está activo</li>
+                    <li>Revisa que le asignaste al menos un curso</li>
+                </ul>
+            </div>
+
+            <div class="info-box error">
+                <h3>🆘 ¿Necesitas más ayuda?</h3>
+                <p><strong>Contacta a soporte:</strong></p>
+                <ul>
+                    <li>Email: soporte@plataformaeducativa.cl</li>
+                    <li>Teléfono: +56 2 2345 6789</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="manual-nav">
+        <a href="manual-profesor.html" class="btn btn-secondary">← Manual Profesor</a>
+        <a href="manual-padre.html" class="btn btn-primary">Manual Padre →</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Plataforma Educativa Inteligente</h4>
+                <p>Documentación oficial 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Manuales</h4>
+                <ul>
+                    <li><a href="manual-estudiante.html">Estudiante</a></li>
+                    <li><a href="manual-profesor.html">Profesor</a></li>
+                    <li><a href="manual-director.html">Director</a></li>
+                    <li><a href="manual-padre.html">Padre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Plataforma Educativa Inteligente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual del Profesor - Plataforma Educativa Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manual-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">📚</span>
+                <span class="brand-text">Plataforma Educativa Inteligente</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="manual-estudiante.html" class="nav-link">Estudiante</a></li>
+                <li><a href="manual-profesor.html" class="nav-link active">Profesor</a></li>
+                <li><a href="manual-director.html" class="nav-link">Director</a></li>
+                <li><a href="manual-padre.html" class="nav-link">Padre</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="manual-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+        <div class="manual-header-content">
+            <span class="header-icon">👨‍🏫</span>
+            <h1>Manual del Profesor</h1>
+            <p>Guía completa para gestionar tus cursos y estudiantes</p>
+        </div>
+    </header>
+
+    <div class="toc-container">
+        <h3>📋 Tabla de Contenidos</h3>
+        <nav class="toc">
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#cursos">Gestión de Cursos</a></li>
+                <li><a href="#tareas">Crear y Evaluar Tareas</a></li>
+                <li><a href="#calificaciones">Sistema de Calificaciones</a></li>
+                <li><a href="#monitoreo">Monitoreo de Estudiantes</a></li>
+                <li><a href="#intervenciones">Intervenciones Académicas</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+                <li><a href="#comunicacion">Comunicación</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="manual-container">
+        <section id="introduccion" class="manual-section">
+            <h2>👋 Introducción</h2>
+            <p>Bienvenido a la Plataforma Educativa Inteligente para Profesores.</p>
+            <p>Esta herramienta te permite:</p>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Crear y gestionar cursos</h4>
+                        <p>Organiza tus cursos, contenidos y materiales de estudio</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Asignar y evaluar tareas</h4>
+                        <p>Define actividades de aprendizaje y califica automáticamente</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Monitorear desempeño</h4>
+                        <p>Identifica estudiantes en riesgo antes de que sea demasiado tarde</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Comunicarse con estudiantes</h4>
+                        <p>Envía retroalimentación personalizada y orientación académica</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="manual-section">
+            <h2>📊 Dashboard del Profesor</h2>
+            <p>Tu dashboard es el centro de control de tu enseñanza. Aquí ves:</p>
+            <ul>
+                <li><strong>Mis Cursos:</strong> Lista de todos tus cursos activos</li>
+                <li><strong>Estudiantes por Curso:</strong> Cantidad y estado de tus estudiantes</li>
+                <li><strong>Tareas Pendientes de Revisión:</strong> Entregas que necesitan calificación</li>
+                <li><strong>Estudiantes en Riesgo:</strong> Alumnos que necesitan intervención</li>
+                <li><strong>Análisis de Clase:</strong> Estadísticas generales de desempeño</li>
+            </ul>
+        </section>
+
+        <section id="cursos" class="manual-section">
+            <h2>📚 Gestión de Cursos</h2>
+
+            <div class="subsection">
+                <h3>Crear un nuevo curso</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Haz clic en "Crear Curso"</h4>
+                            <p>Desde el dashboard, selecciona la opción de crear nuevo curso</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Completa los datos básicos</h4>
+                            <p>Nombre, código, descripción y semestre del curso</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Configura los estudiantes</h4>
+                            <p>Agrega estudiantes manualmente o importa un listado</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Publica el curso</h4>
+                            <p>Haz que el curso sea visible para los estudiantes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Editar información del curso</h3>
+                <p>Desde las opciones del curso, puedes:</p>
+                <ul>
+                    <li>Cambiar nombre, descripción y foto</li>
+                    <li>Modificar horarios y fechas</li>
+                    <li>Agregar o eliminar estudiantes</li>
+                    <li>Establecer reglas de evaluación</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tareas" class="manual-section">
+            <h2>✍️ Crear y Evaluar Tareas</h2>
+
+            <div class="subsection">
+                <h3>Crear una tarea</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Abre tu curso</h4>
+                            <p>Selecciona el curso donde crearás la tarea</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Haz clic en "Crear Tarea"</h4>
+                            <p>En el panel del curso, selecciona esta opción</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Define la tarea</h4>
+                            <p>Título, descripción, instrucciones y criterios</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Establece fechas y puntaje</h4>
+                            <p>Fecha de entrega, valor y rúbrica de evaluación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Evaluar entregas de estudiantes</h3>
+                <p>Para calificar una tarea entregada:</p>
+                <ul>
+                    <li>Abre la tarea en cuestión</li>
+                    <li>Selecciona un estudiante de la lista</li>
+                    <li>Revisa su entrega</li>
+                    <li>Asigna una calificación</li>
+                    <li>Proporciona feedback detallado</li>
+                    <li>Publica la calificación</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 Tips para Crear Tareas Efectivas</h3>
+                <ul>
+                    <li>Sé específico en las instrucciones</li>
+                    <li>Proporciona ejemplos de trabajos excelentes</li>
+                    <li>Establece plazos realistas</li>
+                    <li>Usa rúbricas claras para la evaluación</li>
+                    <li>Proporciona feedback constructivo</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="calificaciones" class="manual-section">
+            <h2>⭐ Sistema de Calificaciones</h2>
+
+            <div class="subsection">
+                <h3>Configurar la ponderación</h3>
+                <p>Define cómo se calcula la nota final del curso:</p>
+                <ul>
+                    <li><strong>Tareas (40%):</strong> Trabajos entregados durante el semestre</li>
+                    <li><strong>Exámenes (40%):</strong> Evaluaciones formales</li>
+                    <li><strong>Participación (20%):</strong> Contribuciones en clase y foros</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Calificar manualmente</h3>
+                <p>Puedes ingresar calificaciones directamente en el libro de calificaciones. También puedes:</p>
+                <ul>
+                    <li>Editar calificaciones anteriores</li>
+                    <li>Agregar comentarios privados</li>
+                    <li>Justificar cambios de notas</li>
+                    <li>Exportar calificaciones</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Escala de calificaciones</h3>
+                <p>La plataforma usa escala de 1 a 10:</p>
+                <ul>
+                    <li>9.0 - 10.0: Excelente</li>
+                    <li>8.0 - 8.9: Bueno</li>
+                    <li>7.0 - 7.9: Satisfactorio</li>
+                    <li>6.0 - 6.9: Aprobado</li>
+                    <li>Menor a 6.0: No aprobado</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="monitoreo" class="manual-section">
+            <h2>📈 Monitoreo de Estudiantes</h2>
+
+            <div class="subsection">
+                <h3>Ver el análisis de riesgo de tus estudiantes</h3>
+                <p>La plataforma genera análisis automáticos de riesgo académico. Puedes:</p>
+                <ul>
+                    <li>Ver qué estudiantes están en riesgo</li>
+                    <li>Entender los factores que los afectan</li>
+                    <li>Recibir recomendaciones sobre intervenciones</li>
+                    <li>Hacer seguimiento del progreso</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Analizar patrones de desempeño</h3>
+                <p>Identifica tendencias en tu clase:</p>
+                <ul>
+                    <li>Temas donde hay dificultades generales</li>
+                    <li>Estudiantes que necesitan refuerzo</li>
+                    <li>Oportunidades para mejorar tu enseñanza</li>
+                </ul>
+            </div>
+
+            <div class="info-box warning">
+                <h3>⚠️ Identificar Estudiantes en Riesgo</h3>
+                <p>Indicadores de alerta:</p>
+                <ul>
+                    <li>Calificaciones decrecientes</li>
+                    <li>Entregas retrasadas o ausentes</li>
+                    <li>Bajo rendimiento en exámenes</li>
+                    <li>Baja participación en clase</li>
+                    <li>Cambios en el patrón de asistencia</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="intervenciones" class="manual-section">
+            <h2>🤝 Intervenciones Académicas</h2>
+
+            <div class="subsection">
+                <h3>Registrar una intervención</h3>
+                <p>Cuando trabajes con un estudiante en riesgo:</p>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Selecciona al estudiante</h4>
+                            <p>De la lista de estudiantes en riesgo</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Describe la intervención</h4>
+                            <p>Qué acciones tomaste para ayudar</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Establece metas</h4>
+                            <p>Objetivos específicos para el estudiante</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Haz seguimiento</h4>
+                            <p>Monitorea el progreso del estudiante</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Tipos de intervenciones</h3>
+                <ul>
+                    <li><strong>Tutorías:</strong> Sesiones individuales de refuerzo</li>
+                    <li><strong>Seguimiento Personalizado:</strong> Contacto regular con el estudiante</li>
+                    <li><strong>Cambio de Estrategia:</strong> Adaptación de métodos de enseñanza</li>
+                    <li><strong>Derivación:</strong> Referencia a servicios de apoyo especializados</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="reportes" class="manual-section">
+            <h2>📊 Reportes</h2>
+
+            <div class="subsection">
+                <h3>Generar reportes de curso</h3>
+                <p>Puedes generar reportes sobre:</p>
+                <ul>
+                    <li>Calificaciones y promedios de clase</li>
+                    <li>Desempeño por tema o evaluación</li>
+                    <li>Asistencia y participación</li>
+                    <li>Análisis de riesgo de la clase</li>
+                    <li>Progreso individual de estudiantes</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Exportar datos</h3>
+                <p>Los reportes se pueden exportar en formatos:</p>
+                <ul>
+                    <li>PDF (para impresión)</li>
+                    <li>Excel (para análisis adicional)</li>
+                    <li>CSV (para integración con otros sistemas)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="comunicacion" class="manual-section">
+            <h2>💬 Comunicación</h2>
+
+            <div class="subsection">
+                <h3>Canales de comunicación disponibles</h3>
+                <ul>
+                    <li><strong>Anuncios:</strong> Mensajes a toda la clase</li>
+                    <li><strong>Foros:</strong> Discusiones por tema</li>
+                    <li><strong>Mensajes Privados:</strong> Comunicación individual con estudiantes</li>
+                    <li><strong>Feedback en Tareas:</strong> Comentarios en entregas específicas</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Mejores prácticas de comunicación</h3>
+                <ul>
+                    <li>Sé claro y específico en tus mensajes</li>
+                    <li>Responde en tiempo oportuno</li>
+                    <li>Proporciona feedback constructivo</li>
+                    <li>Mantén un tono profesional y amable</li>
+                    <li>Documenta comunicaciones importantes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="troubleshooting" class="manual-section">
+            <h2>🔧 Troubleshooting</h2>
+
+            <div class="faq-item">
+                <h3>❓ Las calificaciones de mis estudiantes no aparecen</h3>
+                <ul>
+                    <li>Verifica que ingresaste las notas correctamente</li>
+                    <li>Comprueba que el formato es válido (números de 1-10)</li>
+                    <li>Asegúrate de guardar los cambios</li>
+                    <li>Intenta refrescar la página</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Un estudiante no aparece en mi curso</h3>
+                <ul>
+                    <li>Verifica que el estudiante se registró</li>
+                    <li>Comprueba que lo agregaste al curso</li>
+                    <li>Revisa que el curso esté activo</li>
+                    <li>Contacta a administración si hay problemas</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ No puedo crear una tarea</h3>
+                <ul>
+                    <li>Verifica que tienes permisos para editar el curso</li>
+                    <li>Comprueba que completaste todos los campos obligatorios</li>
+                    <li>Intenta con otro navegador</li>
+                    <li>Contacta a soporte si persiste el problema</li>
+                </ul>
+            </div>
+
+            <div class="info-box error">
+                <h3>🆘 ¿Necesitas más ayuda?</h3>
+                <p><strong>Contacta al soporte técnico:</strong></p>
+                <ul>
+                    <li>Email: soporte@plataformaeducativa.cl</li>
+                    <li>Teléfono: +56 2 2345 6789</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="manual-nav">
+        <a href="manual-estudiante.html" class="btn btn-secondary">← Manual Estudiante</a>
+        <a href="manual-director.html" class="btn btn-primary">Manual Director →</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Plataforma Educativa Inteligente</h4>
+                <p>Documentación oficial 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Manuales</h4>
+                <ul>
+                    <li><a href="manual-estudiante.html">Estudiante</a></li>
+                    <li><a href="manual-profesor.html">Profesor</a></li>
+                    <li><a href="manual-director.html">Director</a></li>
+                    <li><a href="manual-padre.html">Padre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Plataforma Educativa Inteligente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

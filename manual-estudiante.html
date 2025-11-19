@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual del Estudiante - Plataforma Educativa Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manual-style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">📚</span>
+                <span class="brand-text">Plataforma Educativa Inteligente</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="manual-estudiante.html" class="nav-link active">Estudiante</a></li>
+                <li><a href="manual-profesor.html" class="nav-link">Profesor</a></li>
+                <li><a href="manual-director.html" class="nav-link">Director</a></li>
+                <li><a href="manual-padre.html" class="nav-link">Padre</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="manual-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="manual-header-content">
+            <span class="header-icon">👨‍🎓</span>
+            <h1>Manual del Estudiante</h1>
+            <p>Guía completa para usar la Plataforma Educativa Inteligente</p>
+        </div>
+    </header>
+
+    <!-- Table of Contents -->
+    <div class="toc-container">
+        <h3>📋 Tabla de Contenidos</h3>
+        <nav class="toc">
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#dashboard">Dashboard del Estudiante</a></li>
+                <li><a href="#cursos">Gestión de Cursos</a></li>
+                <li><a href="#tareas">Tareas y Entregas</a></li>
+                <li><a href="#calificaciones">Calificaciones</a></li>
+                <li><a href="#riesgo">Análisis de Riesgo</a></li>
+                <li><a href="#vocacional">Perfil Vocacional</a></li>
+                <li><a href="#comunicacion">Comunicación</a></li>
+                <li><a href="#perfil">Perfil Personal</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="manual-container">
+        <section id="introduccion" class="manual-section">
+            <h2>👋 Introducción</h2>
+            <p>¡Bienvenido a la Plataforma Educativa Inteligente!</p>
+            <p>Esta plataforma está diseñada para ayudarte a gestionar tu aprendizaje de manera más efectiva. Te permite:</p>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Gestionar tu aprendizaje</h4>
+                        <p>Ver tus cursos, tareas y calificaciones en un solo lugar</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Monitorear tu desempeño</h4>
+                        <p>Entender tu análisis de riesgo y recibir recomendaciones personalizadas</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Planificar tu futuro</h4>
+                        <p>Hacer tests vocacionales y explorar carreras profesionales</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h4>Comunicarte con profesores</h4>
+                        <p>Hacer preguntas y recibir feedback en tiempo real</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="manual-section">
+            <h2>📊 Dashboard del Estudiante</h2>
+            <p>El dashboard es tu página de inicio. Aquí ves un resumen completo de tu información académica.</p>
+
+            <div class="info-box">
+                <h3>¿Qué información puedes ver?</h3>
+                <ul>
+                    <li><strong>Mis Cursos:</strong> Lista de todos tus cursos actuales con progreso</li>
+                    <li><strong>Tareas Pendientes:</strong> Tareas que debes entregar próximamente</li>
+                    <li><strong>Mis Calificaciones:</strong> Notas recientes y promedios</li>
+                    <li><strong>Mi Riesgo Académico:</strong> Indicador visual de tu estado</li>
+                    <li><strong>Recomendaciones:</strong> Sugerencias personalizadas para mejorar</li>
+                </ul>
+            </div>
+
+            <div class="code-block">
+                <p class="code-label">Vista del Dashboard</p>
+                <pre><code>┌────────────────────────────────────────────┐
+│  Bienvenido, Juan García  👤              │
+│  Noviembre 19, 2024                       │
+├────────────────────────────────────────────┤
+│                                            │
+│  MIS CURSOS (4)                            │
+│  ┌──────────────────┐ ┌─────────────────┐ │
+│  │ Matemáticas      │ │ Lenguaje        │ │
+│  │ Profesor: López  │ │ Profesor: García │
+│  │ Progreso: 85%    │ │ Progreso: 75%   │ │
+│  └──────────────────┘ └─────────────────┘ │
+│                                            │
+│  TAREAS PENDIENTES (2)                     │
+│  □ Matemáticas - Ejercicios Cap 5         │
+│  □ Lenguaje - Ensayo (Vence: Mié)        │
+│                                            │
+│  MIS CALIFICACIONES RECIENTES              │
+│  Matemáticas - Examen Parcial: 8.5        │
+│  Lenguaje - Ensayo: 7.8                   │
+│                                            │
+│  MI RIESGO ACADÉMICO: 🟢 BAJO             │
+│  Score: 25% (Excelente)                   │
+│                                            │
+│  RECOMENDACIONES                           │
+│  ✨ Continúa con el buen desempeño        │
+│  ✨ Considera hacer un test vocacional   │
+│                                            │
+└────────────────────────────────────────────┘</code></pre>
+            </div>
+
+            <div class="steps-container">
+                <h3>Acciones principales</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h4>Haz clic en un curso</h4>
+                    <p>Ves los detalles del curso y las tareas pendientes</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h4>Haz clic en una tarea</h4>
+                    <p>Ves las instrucciones y puedes hacer tu entrega</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h4>Haz clic en "Análisis de Riesgo"</h4>
+                    <p>Ves un análisis detallado de tu desempeño</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <h4>Haz clic en una calificación</h4>
+                    <p>Ves los detalles de la evaluación y feedback del profesor</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cursos" class="manual-section">
+            <h2>📚 Gestión de Cursos</h2>
+
+            <div class="subsection">
+                <h3>Ver mis cursos</h3>
+                <p>En el dashboard, verás todos tus cursos actuales con la siguiente información:</p>
+                <ul>
+                    <li><strong>Nombre del curso:</strong> Título del curso</li>
+                    <li><strong>Profesor:</strong> Nombre del docente responsable</li>
+                    <li><strong>Progreso:</strong> Porcentaje de tareas completadas</li>
+                    <li><strong>Calificación actual:</strong> Tu nota promedio en el curso</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Abrir un curso</h3>
+                <p>Haz clic en el curso para ver:</p>
+                <ul>
+                    <li>Descripción y objetivos del curso</li>
+                    <li>Lista de tareas y entregas</li>
+                    <li>Contenidos y materiales</li>
+                    <li>Anuncios del profesor</li>
+                    <li>Calificaciones y feedback</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Comunicarse con el profesor</h3>
+                <p>Dentro de cada curso, puedes:</p>
+                <ul>
+                    <li>Hacer preguntas en el foro</li>
+                    <li>Enviar mensajes privados</li>
+                    <li>Compartir archivos</li>
+                    <li>Recibir retroalimentación personalizada</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tareas" class="manual-section">
+            <h2>✍️ Tareas y Entregas</h2>
+
+            <div class="subsection">
+                <h3>Cómo entregar una tarea</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Abre la tarea</h4>
+                            <p>Desde el curso, haz clic en la tarea que quieres entregar</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Lee las instrucciones</h4>
+                            <p>Comprende qué se espera de ti y la fecha de entrega</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Sube tu archivo</h4>
+                            <p>Haz clic en "Subir archivo" y selecciona tu trabajo</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Revisa y envía</h4>
+                            <p>Verifica que es el archivo correcto y haz clic en "Enviar"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <h3>⚠️ Importante - Fechas de Entrega</h3>
+                <p>Las tareas tienen fechas límite. Si entregas después:</p>
+                <ul>
+                    <li>Dentro de 24h: Descuento de 10% en calificación</li>
+                    <li>Dentro de 48h: Descuento de 20% en calificación</li>
+                    <li>Después de 48h: No se acepta la tarea</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Estados de una tarea</h3>
+                <ul>
+                    <li><strong>📋 No iniciada:</strong> Aún no has descargado ni enviado nada</li>
+                    <li><strong>⏳ En progreso:</strong> Has descargado pero aún no entregas</li>
+                    <li><strong>✅ Entregada:</strong> Has enviado tu trabajo</li>
+                    <li><strong>⭐ Calificada:</strong> El profesor ha revisado y puesto nota</li>
+                    <li><strong>🔄 Revisión:</strong> El profesor solicita cambios</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="calificaciones" class="manual-section">
+            <h2>⭐ Calificaciones</h2>
+
+            <div class="subsection">
+                <h3>Entender tu calificación</h3>
+                <p>Tu calificación en cada curso se compone de:</p>
+                <ul>
+                    <li><strong>Tareas (40%):</strong> Trabajos entregados durante el curso</li>
+                    <li><strong>Exámenes (40%):</strong> Evaluaciones formales</li>
+                    <li><strong>Participación (20%):</strong> Contribuciones en clase y foros</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Escala de Calificaciones</h3>
+                <div class="grade-scale">
+                    <div class="grade-item">
+                        <span class="grade-number">9.0 - 10.0</span>
+                        <span class="grade-label">Excelente 🌟</span>
+                    </div>
+                    <div class="grade-item">
+                        <span class="grade-number">8.0 - 8.9</span>
+                        <span class="grade-label">Bueno 👍</span>
+                    </div>
+                    <div class="grade-item">
+                        <span class="grade-number">7.0 - 7.9</span>
+                        <span class="grade-label">Satisfactorio ✓</span>
+                    </div>
+                    <div class="grade-item">
+                        <span class="grade-number">6.0 - 6.9</span>
+                        <span class="grade-label">Aprobado ➕</span>
+                    </div>
+                    <div class="grade-item">
+                        <span class="grade-number">&lt; 6.0</span>
+                        <span class="grade-label">No Aprobado ❌</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Ver detalle de una calificación</h3>
+                <p>Haz clic en una calificación para ver:</p>
+                <ul>
+                    <li>La puntuación obtenida</li>
+                    <li>Feedback del profesor</li>
+                    <li>Rúbrica de evaluación</li>
+                    <li>Tiempo de respuesta</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="riesgo" class="manual-section">
+            <h2>📈 Análisis de Riesgo Académico</h2>
+
+            <div class="info-box">
+                <h3>¿Qué es el análisis de riesgo?</h3>
+                <p>La plataforma utiliza inteligencia artificial para analizar tu desempeño y predecir si estás en riesgo académico.</p>
+                <p>Esto te ayuda a:</p>
+                <ul>
+                    <li>Identificar áreas donde necesitas mejorar</li>
+                    <li>Recibir ayuda temprana antes de que sea demasiado tarde</li>
+                    <li>Planificar estrategias para mejorar tu desempeño</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Niveles de Riesgo</h3>
+                <ul>
+                    <li><strong>🟢 BAJO (0-25%):</strong> Tu desempeño es excelente. Mantén el buen trabajo.</li>
+                    <li><strong>🟡 MEDIO (26-50%):</strong> Hay algunos puntos de preocupación. Dedica más tiempo al estudio.</li>
+                    <li><strong>🔴 ALTO (51-75%):</strong> Necesitas intervención. Habla con tu profesor.</li>
+                    <li><strong>🔴 CRÍTICO (76-100%):</strong> Situación muy grave. Busca ayuda inmediata.</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Factores que afectan tu riesgo</h3>
+                <p>Tu análisis de riesgo considera:</p>
+                <ul>
+                    <li>Tus calificaciones actuales</li>
+                    <li>Asistencia a clases</li>
+                    <li>Entregas de tareas a tiempo</li>
+                    <li>Participación en clase</li>
+                    <li>Tendencia de tu desempeño (mejorando o empeorando)</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Si estás en riesgo</h3>
+                <p>Si recibes una alerta de riesgo:</p>
+                <ul>
+                    <li><strong>No te asustes:</strong> Hay tiempo para mejorar</li>
+                    <li><strong>Habla con tu profesor:</strong> Pide orientación específica</li>
+                    <li><strong>Busca tutorías:</strong> Muchas instituciones ofrecen apoyo</li>
+                    <li><strong>Organiza tu tiempo:</strong> Dedica más horas al estudio</li>
+                    <li><strong>Monitorea tu progreso:</strong> Revisa el análisis regularmente</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="vocacional" class="manual-section">
+            <h2>🎯 Perfil Vocacional</h2>
+
+            <div class="subsection">
+                <h3>Tests Vocacionales</h3>
+                <p>La plataforma ofrece tests vocacionales para ayudarte a explorar carreras profesionales que se alinean con tus aptitudes.</p>
+                <ul>
+                    <li>Responde preguntas sobre tus intereses</li>
+                    <li>Obtén un análisis de tus fortalezas</li>
+                    <li>Descubre carreras que te podrían interesar</li>
+                    <li>Recibe recomendaciones personalizadas</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Cómo realizar un test vocacional</h3>
+                <div class="step-detailed">
+                    <div class="step-item">
+                        <span class="step-icon">1️⃣</span>
+                        <div>
+                            <h4>Ve a la sección de Tests</h4>
+                            <p>Desde el menú principal, selecciona "Tests Vocacionales"</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">2️⃣</span>
+                        <div>
+                            <h4>Selecciona un test</h4>
+                            <p>Elige entre los tests disponibles</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">3️⃣</span>
+                        <div>
+                            <h4>Responde honestamente</h4>
+                            <p>Contesta todas las preguntas de forma sincera</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-icon">4️⃣</span>
+                        <div>
+                            <h4>Obtén tu informe</h4>
+                            <p>Recibe un análisis completo de tus resultados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comunicacion" class="manual-section">
+            <h2>💬 Comunicación</h2>
+
+            <div class="subsection">
+                <h3>Canales de comunicación</h3>
+                <ul>
+                    <li><strong>Foros de curso:</strong> Para preguntas generales sobre el curso</li>
+                    <li><strong>Mensajes privados:</strong> Para comunicación uno a uno con profesores</li>
+                    <li><strong>Anuncios:</strong> Notificaciones importantes del profesor</li>
+                    <li><strong>Chat en vivo:</strong> Para consultas urgentes (horario específico)</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Mejores prácticas de comunicación</h3>
+                <ul>
+                    <li><strong>Sé respetuoso:</strong> Usa un tono profesional y amable</li>
+                    <li><strong>Sé específico:</strong> Proporciona contexto en tus preguntas</li>
+                    <li><strong>Sé conciso:</strong> Evita mensajes innecesariamente largos</li>
+                    <li><strong>Sé puntual:</strong> Responde en horarios razonables</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="perfil" class="manual-section">
+            <h2>👤 Perfil Personal</h2>
+
+            <div class="subsection">
+                <h3>Actualizar tu perfil</h3>
+                <p>Desde tu perfil puedes:</p>
+                <ul>
+                    <li>Cambiar tu foto de perfil</li>
+                    <li>Actualizar tu información personal</li>
+                    <li>Modificar contraseña</li>
+                    <li>Configurar notificaciones</li>
+                    <li>Ver tu historial de actividad</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Privacidad y seguridad</h3>
+                <ul>
+                    <li>Mantén tu contraseña en secreto</li>
+                    <li>No compartas tu cuenta con otros</li>
+                    <li>Usa una contraseña fuerte (mínimo 8 caracteres)</li>
+                    <li>Cierra sesión en computadoras compartidas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="troubleshooting" class="manual-section">
+            <h2>🔧 Troubleshooting</h2>
+
+            <div class="faq-item">
+                <h3>❓ No puedo entrar a mi cuenta</h3>
+                <ul>
+                    <li>Verifica que escribiste correctamente tu usuario y contraseña</li>
+                    <li>Usa el botón "¿Olvidaste tu contraseña?" para recuperarla</li>
+                    <li>Limpia el caché de tu navegador e intenta nuevamente</li>
+                    <li>Intenta con otro navegador</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ No puedo entregar mi tarea</h3>
+                <ul>
+                    <li>Verifica que no hayas pasado la fecha límite</li>
+                    <li>Comprueba que el archivo no sea demasiado grande (máximo 50MB)</li>
+                    <li>Intenta con otro navegador</li>
+                    <li>Contacta a tu profesor si el problema persiste</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Mi calificación parece incorrecta</h3>
+                <ul>
+                    <li>Revisa el desglose de calificación</li>
+                    <li>Lee el feedback del profesor</li>
+                    <li>Pregunta al profesor en clase o por mensaje privado</li>
+                    <li>Solicita una revisión si lo consideras necesario</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Mi análisis de riesgo no es exacto</h3>
+                <ul>
+                    <li>El análisis se actualiza cada 24 horas</li>
+                    <li>Asegúrate que tus datos estén actualizados</li>
+                    <li>Consulta con tu profesor sobre lo que puedes mejorar</li>
+                    <li>El algoritmo mejora con el tiempo</li>
+                </ul>
+            </div>
+
+            <div class="info-box error">
+                <h3>🆘 ¿Necesitas más ayuda?</h3>
+                <p><strong>Contacta al soporte técnico:</strong></p>
+                <ul>
+                    <li>Email: soporte@plataformaeducativa.cl</li>
+                    <li>Teléfono: +56 2 2345 6789</li>
+                    <li>Chat en vivo: Disponible Lun-Vie 9-17h</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Navigation Buttons -->
+    <div class="manual-nav">
+        <a href="index.html" class="btn btn-secondary">← Volver al Inicio</a>
+        <a href="manual-profesor.html" class="btn btn-primary">Manual del Profesor →</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Plataforma Educativa Inteligente</h4>
+                <p>Documentación oficial 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Manuales</h4>
+                <ul>
+                    <li><a href="manual-estudiante.html">Estudiante</a></li>
+                    <li><a href="manual-profesor.html">Profesor</a></li>
+                    <li><a href="manual-director.html">Director</a></li>
+                    <li><a href="manual-padre.html">Padre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Plataforma Educativa Inteligente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
